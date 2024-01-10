@@ -15,7 +15,7 @@ import java.util.List;
 
 @Slf4j
 @RestController
-@RequestMapping("/api")
+@RequestMapping("/api/admin")
 public class AdminController {
 
     private final AdminService adminService;
@@ -24,7 +24,7 @@ public class AdminController {
         this.adminService = adminService;
     }
 
-    @PostMapping("/admin/signup")
+    @PostMapping("/signup")
     public SignupResponseDto signup(@Valid @RequestBody SignupRequestDto requestDto, BindingResult bindingResult) {
         List<FieldError> fieldErrors = bindingResult.getFieldErrors();
         if (fieldErrors.size() > 0) {
