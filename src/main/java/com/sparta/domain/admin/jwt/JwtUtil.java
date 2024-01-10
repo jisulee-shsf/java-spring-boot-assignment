@@ -27,7 +27,7 @@ public class JwtUtil {
     public static final String BEARER_PREFIX = "Bearer ";
     private final long TOKEN_TIME = 60 * 60 * 1000L;
 
-    @Value("${jwt.secret.key}") // ✅
+    @Value("${jwt.secret.key}")
     private String secretKey;
 
     private Key key;
@@ -97,7 +97,7 @@ public class JwtUtil {
         return Jwts.parserBuilder().setSigningKey(key).build().parseClaimsJws(token).getBody();
     }
 
-    // 6. HttpServletRequest Cookie 값에서 JWT 가져오기
+    // 2-4. HttpServletRequest Cookie 값에서 JWT 가져오기
     public String getTokenFromRequest(HttpServletRequest req) {
         Cookie[] cookies = req.getCookies();
         if (cookies != null) {

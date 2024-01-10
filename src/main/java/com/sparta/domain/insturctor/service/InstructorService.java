@@ -39,7 +39,6 @@ public class InstructorService {
         return new InstructorResponseDto(instructor);
     }
 
-    // 0. 강사 조회
     private Instructor findById(Long instructorId) {
         return instructorRepository.findInstructorByInstructorId(instructorId).orElseThrow(() ->
                 new IllegalArgumentException("등록된 강사 정보가 없습니다."));

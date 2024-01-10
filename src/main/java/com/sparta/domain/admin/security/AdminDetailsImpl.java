@@ -42,7 +42,7 @@ public class AdminDetailsImpl implements UserDetails {
         return authorities;
     }
 
-    @Override // ✅
+    @Override
     public boolean isAccountNonExpired() {
         return true;
     }

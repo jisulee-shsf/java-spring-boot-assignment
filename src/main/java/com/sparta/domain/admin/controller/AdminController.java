@@ -1,4 +1,5 @@
 package com.sparta.domain.admin.controller;
+
 import com.sparta.domain.admin.dto.SignupRequestDto;
 import com.sparta.domain.admin.dto.SignupResponseDto;
 import com.sparta.domain.admin.service.AdminService;

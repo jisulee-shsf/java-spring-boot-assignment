@@ -4,7 +4,6 @@ import com.sparta.domain.admin.jwt.JwtAuthenticationFilter;
 import com.sparta.domain.admin.jwt.JwtAuthorizationFilter;
 import com.sparta.domain.admin.jwt.JwtUtil;
 import com.sparta.domain.admin.security.AdminDetailsServiceImpl;
-import lombok.RequiredArgsConstructor;
 import org.springframework.boot.autoconfigure.security.servlet.PathRequest;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -61,9 +60,9 @@ public class WebSecurityConfig {
         // 3. HTTP 요청 인증 구성 설정
         http.authorizeHttpRequests((authorizeHttpRequests) ->
                 authorizeHttpRequests
-                        .requestMatchers(PathRequest.toStaticResources().atCommonLocations()).permitAll() // resources 요청 허용
-                        .requestMatchers("/api/admin/**").permitAll() // /api/admin/ 요청 허용 -> ✅ hasRole() 사용 여부 확인
-                        .anyRequest().authenticated() // 이외 요청의 경우, 일괄 인증 처리 필요
+                        .requestMatchers(PathRequest.toStaticResources().atCommonLocations()).permitAll()
+                        .requestMatchers("/api/admin/**").permitAll()
+                        .anyRequest().authenticated()
         );
 
         // 4. HTTP 폼 로그인 설정

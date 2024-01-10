@@ -11,13 +11,14 @@ import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 
 import java.util.Optional;
+
 @Slf4j
 @Service
 public class AdminService {
 
     private final AdminRepository adminRepository;
     private final PasswordEncoder passwordEncoder;
-    private final JwtUtil jwtUtil; // ✅
+    private final JwtUtil jwtUtil;
 
     public AdminService(AdminRepository adminRepository, PasswordEncoder passwordEncoder, JwtUtil jwtUtil) {
         this.adminRepository = adminRepository;

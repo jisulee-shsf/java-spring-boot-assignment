@@ -2,10 +2,8 @@ package com.sparta.domain.insturctor.dto;
 
 import com.sparta.domain.insturctor.entity.Instructor;
 import lombok.Getter;
-import lombok.Setter;
 
 @Getter
-@Setter
 public class InstructorResponseDto {
     private Long instructorId;
     private String name;
