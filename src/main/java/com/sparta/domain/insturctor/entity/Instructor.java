@@ -1,13 +1,14 @@
 package com.sparta.domain.insturctor.entity;
 
 import com.sparta.domain.insturctor.dto.InstructorRequestDto;
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Id;
+//import com.sparta.domain.lecture.entity.Lecture;
+import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
+
+import java.util.ArrayList;
+import java.util.List;
 
 @Entity
 @Getter
@@ -22,6 +23,9 @@ public class Instructor {
     private String company;
     private String phoneNumber;
     private String introduction;
+
+//    @OneToMany(mappedBy = "instructor")
+//    private List<Lecture> lectureList = new ArrayList<>();
 
     public Instructor(InstructorRequestDto requestDto) {
         this.name = requestDto.getName();
