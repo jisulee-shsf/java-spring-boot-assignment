@@ -14,6 +14,10 @@
 |admin|instructor|lecture|
 |:---:|:---:|:---:|
 |![image](https://github.com/jisulee-shsf/spring-hanghae99-assignment-level3/assets/109773795/7e5ab63f-1aac-42d7-802d-2fe1ff85dffa)|![image](https://github.com/jisulee-shsf/spring-hanghae99-assignment-level3/assets/109773795/98ed4418-b19d-4d81-9674-cfcfb20b1626)|![image](https://github.com/jisulee-shsf/spring-hanghae99-assignment-level3/assets/109773795/50e0e426-359a-4e32-90f1-41d8d17f4156)|
+
+#### 📌 [ERD]
+<img width="381" alt="level3_erd" src="https://github.com/jisulee-shsf/spring-hanghae99-assignment-level3/assets/109773795/0307230a-3edb-411a-86a1-abf93002692b">
+
 ##
 #### 📌 [과제 회고]
 - 관리자 서버에 필요한 기능을 구현하며 설계의 큰 그림을 그려볼 수 있어서 좋았습니다.
